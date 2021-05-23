@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test task</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="assets/lib/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/lib/jquery/jquery.mask-input.js"></script>
+    <script src="assets/lib/three.min.js"></script>
+    <script src="assets/lib/GLTFLoader.js"></script>
+    <script src="assets/lib/OrbitControls.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <div class="container">
+                <div class="title-dif">front<span>_test</span></div>
+                <div class="title-large">Тестовое задание</div>
+                <div class="subtitle-light">Сверстайте эту страницу включая интерактивные элементы.</div>
+            </div>
+        </header>
+        <div class="section bordered">
+            <div class="container">
+                <div class="block-columner bordered j-center cols2">
+                    <div class="col col-main-3d">
+                        <div class="block-3d" id="fox"></div>
+                        <div class="text">Анимация: вращение вокруг своей оси автоматически, или с реакцией на мышку.</div>
+                        <div class="text-light">3D модель лисы в формате fbx лежит в файлах проекта. Можно использовать любую другую модель.</div>
+                    </div>
+                    <div class="col col-main-rotate">
+                        <div class="block-rotate">
+                            <div class="block-rotate__container">
+                                <img class="birds1" src="assets/img/birds1.png" alt="birds1">
+                                <div class="block-rotate__card">
+                                    <img class="card-image" src="assets/img/infinity.png" alt="infinity">
+                                    <div class="title-small">Интерактивная карточка</div>
+                                    <div class="subtitle-small">Должна вращаться за мышкой</div>
+                                    <div class="button changable j-center a-start">
+                                        <button>
+                                            <div class="main-content">
+                                                <i class="icon icon-eye"></i>
+                                                <span>Кнопка</span>
+                                            </div>
+                                            <div class="hover-content">
+                                                <span>Написать</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="birds2" src="assets/img/birds2.png" alt="birds2">
+                            </div>
+                        </div>
+                        <div class="text">
+                            Анимация: карточка отклоняется по направлению к курсору. Верхний и нижний слой с птицами повторяет движение карточки с легким параллаксом.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bordered">
+            <div class="container">
+                <div class="block-columner bordered j-center cols2">
+                    <div class="col col-main-form">
+                        <form class="form" novalidate autocomplete="off">
+                            <div class="title-medium">Форма</div>
+                            <div class="subtitle-medium">Дополнительный текст ⏳</div>
+                            <div class="form-group custom-dropdown validate required">
+                                <div class="custom-dropdown__header">
+                                    <div class="text-label">Выбор чего-то *</div>
+                                    <div class="custom-dropdown__current text-input">Выбор чего-то *</div>
+                                    <input type="hidden">
+                                </div>
+                                <ul class="custom-dropdown__list">
+                                    <li class="custom-dropdown__item" data-value="Выбор1">
+                                        Выбор1
+                                    </li>
+                                    <li class="custom-dropdown__item" data-value="Выбор2">
+                                        Выбор2
+                                    </li>
+                                    <li class="custom-dropdown__item" data-value="Выбор3">
+                                        Выбор3
+                                    </li>
+                                    <li class="custom-dropdown__item" data-value="Выбор4">
+                                        Выбор4
+                                    </li>
+                                    <li class="custom-dropdown__item" data-value="Выбор5">
+                                        Выбор5
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-group input-phone validate required">
+                                <div class="text-label">Номер телефона *</div>
+                                <input type="tel" placeholder="Номер телефона *">
+                            </div>
+                            <div class="form-group textarea">
+                                <div class="text-label">Коротко о чем-то ещё</div>
+                                <textarea rows="3" placeholder="Коротко о чем-то ещё"></textarea>
+                            </div>
+                            <div class="form-group input-file">
+                                <label>
+                                    <div class="button-icon">
+                                        <i class="icon icon-clip"></i>
+                                    </div>
+                                    <input type="file" multiple>
+                                </label>
+                                <div class="input-file__status">
+                                    <span class="text-file empty">Прикрепить файл</span>
+                                </div>
+                            </div>
+                            <div class="button changable j-center a-start">
+                                <button type="submit">
+                                    <div class="main-content">
+                                        <i class="icon icon-eye"></i>
+                                        <span>Кнопка</span>
+                                    </div>
+                                    <div class="hover-content">
+                                        <span>Отправить</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="text">
+                            Сверстать форму с учетом всех состояний.
+                        </div>
+                    </div>
+                    <div class="col col-main-spoilers">
+                        <div class="block-spoilers">
+                            <div class="block-spoilers-columner">
+                                <div class="col-spoilers-number" data-set="1">
+                                    <div class="tab-spoiler-number" data-spoiler="1">
+                                        <span class="text-tab-spoiler">1</span>
+                                    </div>
+                                    <div class="tab-spoiler-number" data-spoiler="2">
+                                        <span class="text-tab-spoiler">2</span>
+                                    </div>
+                                    <div class="tab-spoiler-number" data-spoiler="3">
+                                        <span class="text-tab-spoiler">3</span>
+                                    </div>
+                                </div>
+                                <div class="col-spoilers-content" data-set="1">
+                                    <div class="spoiler" data-spoiler="1">
+                                        <div class="spoiler__head">
+                                            <span class="title-spoiler">Заголовок 1</span>
+                                        </div>
+                                        <div class="spoiler__content text-spoiler-content">
+                                            Какой-то текст про очень важные вещи о которых нужно было написать внутри этих табов.
+                                        </div>
+                                    </div>
+                                    <div class="spoiler" data-spoiler="2">
+                                        <div class="spoiler__head">
+                                            <span class="title-spoiler">Заголовок 2</span>
+                                        </div>
+                                        <div class="spoiler__content text-spoiler-content">
+                                            Какой-то текст про очень важные вещи о которых нужно было написать внутри этих табов.
+                                        </div>
+                                    </div>
+                                    <div class="spoiler" data-spoiler="3">
+                                        <div class="spoiler__head">
+                                            <span class="title-spoiler">Заголовок 3</span>
+                                        </div>
+                                        <div class="spoiler__content text-spoiler-content">
+                                            Какой-то текст про очень важные вещи о которых нужно было написать внутри этих табов.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Сверстать табы
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="subtitle-light">
+                    Не стесняйтесь задавать вопросы по заданию, если они есть.
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./assets/js/form.js"></script>
+    <script type="text/javascript" src="./assets/js/3d-animation.js"></script>
+    <script type="text/javascript" src="./assets/js/spoiler.js"></script>
+    <script type="text/javascript" src="./assets/js/block-rotate.js"></script>
+</body>
+</html>

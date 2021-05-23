@@ -1,0 +1,81 @@
+.col-main-3d{
+  border-right: 1px solid $color-text;
+  padding: 0 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text{
+    text-align: center;
+    max-width: 294px;
+    margin-bottom: 12px;
+  }
+  .text-light{
+    max-width: 412px;
+    text-align: center;
+  }
+  @include notebook{
+    border-right: none;
+    padding: 30px 0;
+  }
+}
+.col-main-rotate{
+  padding: 58px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .block-rotate{
+    margin-bottom: 34px;
+  }
+  .text{
+    text-align: center;
+    max-width: 294px;
+  }
+  @include notebook{
+    padding: 30px 0;
+  }
+}
+.col-main-form{
+  padding: 54px 32px 32px;
+  border-right: 1px solid $color-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .form{
+    margin-bottom: 52px;
+  }
+  @include notebook{
+    border-right: none;
+    padding: 30px 0;
+  }
+}
+.col-main-spoilers{
+  padding: 54px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .block-spoilers{
+    margin-bottom: 52px;
+  }
+  @include notebook{
+    padding: 30px 0;
+  }
+}
+
+.col-spoilers-number{
+  .tab-spoiler-number{
+    opacity: 0.35;
+    transition: opacity 0.2s;
+    &:not(:last-child){
+      margin-bottom: 16px;
+    }
+    &.open{
+      opacity: 1;
+    }
+  }
+}
+.col-spoilers-content{
+  width: 100%;
+  .spoiler{
+    margin-bottom: 16px;
+  }
+}

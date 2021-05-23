@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@import
+  '../scss/base/variables',
+  '../scss/base/animations',
+  '../scss/base/typography',
+  '../scss/base/reset',
+  '../scss/base/base',
+  '../scss/base/fonts',
+  '../scss/base/breakpoints';
+
+@import '../scss/blocks/blocks';
+@import '../scss/elements/elements';
+

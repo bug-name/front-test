@@ -1,0 +1,45 @@
+@import 'header';
+@import 'footer';
+@import 'block-rotate';
+@import 'block-spoilers';
+@import 'columns';
+
+.section{
+  &.bordered{
+    border-bottom: 1px solid $color-text;
+  }
+}
+.block-columner{
+  display: flex;
+  &.j-center{
+    justify-content: center;
+  }
+
+  &.cols2{
+    .col{
+      width: 50%;
+      flex-shrink: 0;
+      @include notebook{
+        width: 100%;
+      }
+    }
+  }
+  @include notebook{
+    flex-direction: column;
+  }
+}
+
+.block-3d{
+  height: 475px;
+  width: 100%;
+  position: relative;
+  canvas{
+    position: absolute;
+    z-index: -1;
+    left: 45%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+

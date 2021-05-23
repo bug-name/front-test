@@ -1,0 +1,16 @@
+.block-spoilers{
+  width: 100%;
+  max-width: 504px;
+  min-height: 615px;
+  padding: 89px 76px 44px 44px;
+  background: #FFFFFF;
+  @include notebook{
+    padding: 15px;
+  }
+}
+.block-spoilers-columner{
+  display: flex;
+  .col-spoilers-number{
+    margin-right: 24px;
+  }
+}

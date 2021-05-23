@@ -1,0 +1,84 @@
+
+.text{
+  font-size: 14px;
+  line-height: 19px;
+}
+.text-light{
+  font-size: 14px;
+  line-height: 19px;
+  color: $color-text2
+}
+.text-label{
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-background;
+}
+.text-file{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.text-tab-spoiler{
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+}
+.text-input{
+  font-size: 20px;
+  line-height: 32px;
+}
+.text-spoiler-content{
+  font-size: 13px;
+  line-height: 16px;
+}
+.title-large{
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 115px;
+  text-align: center;
+  @include large-notebook {
+    font-size: 60px;
+    line-height: 80px;
+  }
+}
+.title-dif{
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+  span{
+    color: $color-text2;
+  }
+}
+.subtitle-light{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+  color: $color-text2;
+}
+.subtitle-medium{
+  font-size: 16px;
+  line-height: 24px;
+}
+.title-small{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+}
+.title-medium{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 68px;
+}
+.title-spoiler{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+input, textarea{
+  font-size: 20px;
+  line-height: 32px;
+}
+

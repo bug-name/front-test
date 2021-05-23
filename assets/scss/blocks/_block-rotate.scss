@@ -1,0 +1,58 @@
+.block-rotate{
+  min-width: 284px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1000px;
+  .block-rotate__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .block-rotate__card{
+    padding: 57.79px 24px 51.21px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border-radius: 16px;
+    max-width: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card-image{
+      margin-bottom: 38px;
+    }
+    .title-small{
+      margin-bottom: 24px;
+    }
+    .subtitle-small{
+      margin-bottom: 24px;
+    }
+  }
+  .birds1{
+    content: "";
+    position: absolute;
+    background-image: url("../img/birds1.png");
+    width: 160px;
+    Height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    left: -120px;
+    top: 95px;
+  }
+  .birds2{
+    content: "";
+    position: absolute;
+    background-image: url("../img/birds2.png");
+    width: 90px;
+    height: 80px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    right: -62px;
+    top: 31px;
+  }
+}
